@@ -1,0 +1,5 @@
+@mixin rigidHeaderAndFooter {
+    width: $fullSize;
+    height: $rigidSize;
+    background-color: $darkBlue;
+}

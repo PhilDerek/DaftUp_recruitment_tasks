@@ -1,0 +1,30 @@
+.sidebar {
+    background-color: $lightGrey;
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .sidebar {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .sidebar {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sidebar {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
