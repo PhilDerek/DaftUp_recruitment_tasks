@@ -1,0 +1,33 @@
+@mixin blockCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin btnStyle {
+    font-size: 1rem;
+    padding: 2vh;
+    transition: background-color .3s, color .3s;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: $mainColorGray;
+}
+
+@mixin btnDesktop {
+    box-shadow: 3px 3px 3px gray;
+    &:hover {
+        background-color: #000;
+        color: $mainColorGray;
+    }
+    &:active {
+        transform: translate(1px, 1px);
+        box-shadow: 2px 2px 3px #000;
+    }
+}
+
+@mixin flexCent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

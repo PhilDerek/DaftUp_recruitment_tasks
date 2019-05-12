@@ -1,0 +1,36 @@
+.main {
+    min-height: $rigidSize2;
+    flex-grow: 2;
+    width: 100%;
+    display: grid;
+    margin: $rigidSize3 auto;
+    grid-row-gap: $rigidSize3;
+    grid-column-gap: $rigidSize3;
+}
+
+@media screen and (max-width: 599px) {
+    .main {
+        grid-template-rows: 50% 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .main {
+        grid-template-rows: 50% 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: $rigidSize2 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: $rigidSize2 1fr 1fr 1fr;
+    }
+}

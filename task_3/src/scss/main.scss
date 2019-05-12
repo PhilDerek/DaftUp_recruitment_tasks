@@ -1,0 +1,13 @@
+@import "../scss/base/reset";
+@import "../scss/base/typography";
+@import "../scss/layout/main";
+@import "../scss/layout/forms";
+@import "../scss/layout/tables";
+
+body {
+    min-height: 100vh;
+    display: flex;
+    padding-top: 5vh;
+    justify-content: center;
+    background-color: rgb(156, 156, 156);
+}

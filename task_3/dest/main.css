@@ -40,71 +40,66 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  background-color: #1A1C22; }
+html body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
 
-.header {
-  width: 100%;
-  height: 100px;
-  background-color: #1A1C22; }
-
-.main {
-  min-height: 400px;
-  flex-grow: 2;
-  width: 100%;
-  display: grid;
-  margin: 15px auto;
-  grid-row-gap: 15px;
-  grid-column-gap: 15px; }
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh; }
 
 @media screen and (max-width: 599px) {
-  .main {
-    grid-template-rows: 50% 1fr 1fr 1fr 1fr 1fr 1fr; } }
+  .container {
+    width: 70vw; } }
 
 @media screen and (min-width: 600px) {
-  .main {
-    grid-template-rows: 50% 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr; } }
-
-@media screen and (min-width: 900px) {
-  .main {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 400px 1fr 1fr; } }
+  .container {
+    width: 50vw; } }
 
 @media screen and (min-width: 1200px) {
-  .main {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 400px 1fr 1fr 1fr; } }
+  .container {
+    width: 30vw; } }
 
-.sidebar {
-  background-color: #6C757D; }
-
-@media screen and (max-width: 900px) {
-  .sidebar {
-    width: 100%; } }
-
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  .sidebar {
-    grid-column-start: 1;
-    grid-column-end: 3; } }
-
-@media screen and (min-width: 900px) {
-  .sidebar {
-    grid-row-start: 1;
-    grid-row-end: 4; } }
+.form {
+  margin-bottom: 10vh;
+  width: 90%; }
+  .form__label {
+    display: block; }
+  .form__tableFilter, .form__btn {
+    float: left;
+    height: 30px;
+    box-sizing: border-box; }
+  .form__btn {
+    border: 0;
+    background-color: gray;
+    width: 30px; }
 
 @media screen and (min-width: 1200px) {
-  .sidebar {
-    grid-row-start: 1;
-    grid-row-end: 3; } }
+  .form__btn {
+    cursor: pointer; } }
 
-.content {
-  background-color: #343A40; }
+.table {
+  width: 90%; }
+  .table__title {
+    background-color: gray;
+    font-weight: bold; }
+    .table__title__cell {
+      padding: 2vh; }
+  .table__even__cell, .table__odd__cell {
+    padding: 2vh; }
+
+.table,
+.table__even,
+.table__odd {
+  border: 1px solid #000; }
 
 body {
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  padding-top: 5vh;
+  justify-content: center;
+  background-color: #9c9c9c; }
 
