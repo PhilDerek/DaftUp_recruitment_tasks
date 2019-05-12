@@ -1,0 +1,15 @@
+@import "../scss/base/reset";
+@import "../scss/base/typography";
+@import "../scss/utils/variables";
+@import "../scss/utils/mixins";
+@import "../scss/components/buttons";
+@import "../scss/components/modal";
+
+.hide {
+    display: none;
+}
+
+body {
+    @include flexCent();
+    min-height: 100vh;
+}

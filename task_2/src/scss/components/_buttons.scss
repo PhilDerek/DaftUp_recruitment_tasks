@@ -1,0 +1,18 @@
+.openBtn {
+    border: 0;
+    @include btnStyle();
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .openBtn {
+       @include btnDesktop();
+    }
+}
