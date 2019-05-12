@@ -1,0 +1,22 @@
+.table {
+    width: 90%;
+    &__title {
+        background-color: gray;
+        font-weight: bold;
+        &__cell {
+            padding: 2vh;
+        }
+    }
+    &__even,
+    &__odd {
+        &__cell {
+            padding: 2vh;
+        }
+    }
+}
+
+.table,
+.table__even,
+.table__odd {
+    border: 1px solid #000;
+}
